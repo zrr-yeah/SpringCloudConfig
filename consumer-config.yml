@@ -1,3 +1,4 @@
+# 公共配置文件，用来定义指定加载的配置文件，---表示分隔符
 spring:
   profiles:
     active: dev
@@ -7,7 +8,7 @@ server:
   port: 7004
 
 spring:
-  profiles: dev
+  profiles: dev     # 开发环境
   application:
     name: consumer-config
 
@@ -22,7 +23,7 @@ server:
   port: 7005
 
 spring:
-  profiles: test
+  profiles: test    # 测试环境
   application:
     name: consumer-config
 
@@ -31,3 +32,11 @@ eureka:
     register-with-eureka: false
     service-url: 
       defaultZone: http://eureka9001.com:9001/eureka/
+      
+---
+server:
+  port: 7006
+
+spring:
+  profiles: prod    #生产环境
+  
