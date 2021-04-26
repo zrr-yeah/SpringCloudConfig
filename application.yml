@@ -6,10 +6,10 @@ spring:
 spring:
   profiles: dev                   #开发环境
   application:
-    name: microservice-config-dev
+    name: scconfigserver-dev
     
 ---
 spring:
   profiles: test                  #测试环境
   application:
-    name: microservice-config-test
+    name: scconfigserver-test
